@@ -74,7 +74,7 @@ app.get(`/chelsea`, async (req, res) => {
     res.json({ success: true, data });
   } catch (error) {
     console.log(error);
-    res.json({ success: false });
+    res.json({ success: false,data:[] });
   }
 });
 
